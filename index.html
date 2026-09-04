@@ -1,763 +1,917 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mohammed Adil Rehan | DevOps Engineer</title>
+    <title>Mohammed Adil Rehan — DevOps Engineer</title>
 
     <meta
         name="description"
-        content="Portfolio of Mohammed Adil Rehan - DevOps Engineer specializing in Kubernetes, Cloud Infrastructure, CI/CD and Automation."
+        content="Mohammed Adil Rehan — DevOps Engineer specializing in Kubernetes, cloud infrastructure, CI/CD and automation."
     >
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 
+
 <body>
 
-    <!-- ================= NAVBAR ================= -->
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
 
-    <header class="navbar">
-        <div class="container nav-container">
+<header class="navbar">
 
-            <a href="#home" class="logo">
-                <span class="logo-symbol">&lt;/&gt;</span>
-                mareh<span>.dev</span>
-            </a>
+    <div class="container nav-container">
 
-            <nav class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#experience">Experience</a>
-                <a href="#contact">Contact</a>
-            </nav>
-
-            <button class="menu-btn" id="menu-btn">
-                ☰
-            </button>
-
-        </div>
-    </header>
+        <a href="#home" class="logo">
+            AR<span>.</span>
+        </a>
 
 
-    <!-- ================= HERO ================= -->
+        <nav class="nav-links">
 
-    <section id="home" class="hero">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
 
-        <div class="container hero-container">
+        </nav>
 
-            <div class="hero-content">
 
-                <div class="availability">
-                    <span class="status-dot"></span>
-                    Available for opportunities
-                </div>
+        <a href="#contact" class="nav-contact">
+            Let's talk →
+        </a>
 
-                <p class="terminal-command">$ whoami</p>
 
-                <h1>
-                    Mohammed<br>
-                    <span>Adil Rehan</span>
-                </h1>
+        <button
+            class="menu-btn"
+            id="menu-btn"
+            aria-label="Open navigation"
+        >
+            ☰
+        </button>
 
-                <h2>
-                    DevOps Engineer <span>|</span> Kubernetes Administrator
-                </h2>
+    </div>
 
-                <p class="hero-description">
-                    I build, automate and scale cloud-native infrastructure.
-                    Passionate about Kubernetes, CI/CD, Infrastructure as Code
-                    and solving real-world engineering problems.
-                </p>
+</header>
 
-                <div class="hero-buttons">
 
-                    <a href="#projects" class="btn btn-primary">
-                        View My Work →
-                    </a>
 
-                    <a href="#contact" class="btn btn-secondary">
-                        Contact Me
-                    </a>
+<!-- =====================================================
+     HERO
+===================================================== -->
 
-                </div>
+<main>
+
+<section id="home" class="hero">
+
+    <div class="hero-grid"></div>
+
+    <div class="container hero-container">
+
+
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                DEVOPS ENGINEER
+            </p>
+
+
+            <h1>
+
+                Building
+                <span>reliable</span>
+                systems.
+
+            </h1>
+
+
+            <p class="hero-description">
+
+                I'm Mohammed Adil Rehan, a DevOps Engineer focused on
+                Kubernetes, cloud infrastructure, CI/CD and automation.
+
+                I enjoy turning complex infrastructure problems into
+                simple, reliable engineering solutions.
+
+            </p>
+
+
+            <div class="hero-actions">
+
+                <a
+                    href="#projects"
+                    class="btn btn-primary"
+                >
+                    View projects
+                    <span>↗</span>
+                </a>
+
+
+                <a
+                    href="#contact"
+                    class="btn btn-secondary"
+                >
+                    Get in touch
+                </a>
 
             </div>
 
 
-            <!-- TERMINAL -->
+            <div class="hero-meta">
 
-            <div class="terminal">
-
-                <div class="terminal-header">
-
-                    <div class="terminal-buttons">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-
-                    <p>engineer@portfolio:~</p>
-
+                <div>
+                    <strong>4+</strong>
+                    <span>Years experience</span>
                 </div>
 
 
-                <div class="terminal-body">
-
-                    <p>
-                        <span class="command">➜</span>
-                        <span class="path">~</span>
-                        kubectl get engineer
-                    </p>
-
-                    <div class="terminal-output">
-
-                        <div class="table-row table-header">
-                            <span>NAME</span>
-                            <span>EXPERIENCE</span>
-                            <span>ROLE</span>
-                        </div>
-
-                        <div class="table-row">
-                            <span>adil-rehan</span>
-                            <span>4+ years</span>
-                            <span>DevOps Engineer</span>
-                        </div>
-
-                    </div>
+                <div>
+                    <strong>K8s</strong>
+                    <span>Cloud native</span>
+                </div>
 
 
-                    <p>
-                        <span class="command">➜</span>
-                        <span class="path">~</span>
-                        kubectl describe engineer adil-rehan
-                    </p>
-
-                    <div class="terminal-info">
-
-                        <p>
-                            <span>Skills:</span>
-                        </p>
-
-                        <ul>
-                            <li>☸ Kubernetes</li>
-                            <li>🐳 Docker</li>
-                            <li>☁ AWS</li>
-                            <li>⚙ CI/CD</li>
-                            <li>🏗 Terraform</li>
-                        </ul>
-
-                        <p>
-                            <span>Status:</span>
-                            <strong>Always Learning 🚀</strong>
-                        </p>
-
-                    </div>
-
-                    <p class="cursor-line">
-                        <span class="command">➜</span>
-                        <span class="path">~</span>
-                        <span class="cursor"></span>
-                    </p>
-
+                <div>
+                    <strong>CI/CD</strong>
+                    <span>Automation</span>
                 </div>
 
             </div>
 
         </div>
 
-    </section>
 
 
+        <!-- ABSTRACT VISUAL -->
 
-    <!-- ================= ABOUT ================= -->
+        <div class="hero-visual">
 
-    <section id="about" class="section">
+            <div class="visual-orbit orbit-one"></div>
 
-        <div class="container">
+            <div class="visual-orbit orbit-two"></div>
 
-            <div class="section-heading">
+            <div class="visual-orbit orbit-three"></div>
 
-                <p class="section-tag">// about_me</p>
 
-                <h2>
-                    Building reliable systems,
-                    <span>one deployment at a time.</span>
-                </h2>
+            <div class="visual-center">
+
+                <span>AR</span>
 
             </div>
 
 
-            <div class="about-grid">
+            <div class="visual-node node-one">
+                Kubernetes
+            </div>
 
-                <div class="about-text">
+            <div class="visual-node node-two">
+                Cloud
+            </div>
 
-                    <p>
-                        I'm a DevOps Engineer with experience in designing,
-                        automating and managing cloud-native infrastructure.
-                    </p>
+            <div class="visual-node node-three">
+                CI/CD
+            </div>
 
-                    <p>
-                        My work focuses on Kubernetes administration, CI/CD
-                        automation, containerization, infrastructure automation
-                        and monitoring systems.
-                    </p>
-
-                    <p>
-                        I enjoy troubleshooting complex infrastructure problems,
-                        exploring new cloud-native technologies and continuously
-                        improving engineering workflows.
-                    </p>
-
-                </div>
-
-
-                <div class="stats-grid">
-
-                    <div class="stat-card">
-                        <h3>4+</h3>
-                        <p>Years Experience</p>
-                    </div>
-
-                    <div class="stat-card">
-                        <h3>☸</h3>
-                        <p>Kubernetes</p>
-                    </div>
-
-                    <div class="stat-card">
-                        <h3>CI/CD</h3>
-                        <p>Automation</p>
-                    </div>
-
-                    <div class="stat-card">
-                        <h3>☁</h3>
-                        <p>Cloud Native</p>
-                    </div>
-
-                </div>
-
+            <div class="visual-node node-four">
+                Automation
             </div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
 
-    <!-- ================= SKILLS ================= -->
+<!-- =====================================================
+     ABOUT
+===================================================== -->
 
-    <section id="skills" class="section section-dark">
+<section id="about" class="section">
 
-        <div class="container">
+    <div class="container">
 
-            <div class="section-heading">
-
-                <p class="section-tag">// technical_skills</p>
-
-                <h2>
-                    Tools I use to
-                    <span>build & automate.</span>
-                </h2>
-
-            </div>
-
-
-            <div class="skills-grid">
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">☸</div>
-
-                    <h3>Containers & Kubernetes</h3>
-
-                    <div class="skill-tags">
-                        <span>Kubernetes</span>
-                        <span>Docker</span>
-                        <span>Helm</span>
-                        <span>ArgoCD</span>
-                        <span>Traefik</span>
-                        <span>Gateway API</span>
-                    </div>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">⚙</div>
-
-                    <h3>CI/CD & DevSecOps</h3>
-
-                    <div class="skill-tags">
-                        <span>Jenkins</span>
-                        <span>GitHub Actions</span>
-                        <span>GitLab CI</span>
-                        <span>SonarQube</span>
-                        <span>Trivy</span>
-                        <span>Gitleaks</span>
-                    </div>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">☁</div>
-
-                    <h3>Cloud & Infrastructure</h3>
-
-                    <div class="skill-tags">
-                        <span>AWS</span>
-                        <span>GCP</span>
-                        <span>Terraform</span>
-                        <span>Ansible</span>
-                        <span>Linux</span>
-                    </div>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">📊</div>
-
-                    <h3>Monitoring & Observability</h3>
-
-                    <div class="skill-tags">
-                        <span>Prometheus</span>
-                        <span>Grafana</span>
-                        <span>VictoriaMetrics</span>
-                        <span>ELK Stack</span>
-                        <span>kube-state-metrics</span>
-                    </div>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">💻</div>
-
-                    <h3>Programming & Scripting</h3>
-
-                    <div class="skill-tags">
-                        <span>Python</span>
-                        <span>Bash</span>
-                        <span>Java</span>
-                        <span>SQL</span>
-                    </div>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">🛠</div>
-
-                    <h3>Engineering Tools</h3>
-
-                    <div class="skill-tags">
-                        <span>Git</span>
-                        <span>GitHub</span>
-                        <span>Maven</span>
-                        <span>Nginx</span>
-                        <span>Tomcat</span>
-                    </div>
-
-                </div>
-
-            </div>
-
+        <div class="section-label">
+            01 — ABOUT
         </div>
 
-    </section>
 
+        <div class="about-layout">
 
-
-    <!-- ================= PROJECTS ================= -->
-
-    <section id="projects" class="section">
-
-        <div class="container">
-
-            <div class="section-heading">
-
-                <p class="section-tag">// featured_projects</p>
-
-                <h2>
-                    Things I've built
-                    <span>and explored.</span>
-                </h2>
-
-            </div>
-
-
-            <div class="projects-grid">
-
-
-                <!-- PROJECT 1 -->
-
-                <article class="project-card featured">
-
-                    <div class="project-top">
-
-                        <span class="project-number">01</span>
-
-                        <span class="project-status">
-                            ● Active Development
-                        </span>
-
-                    </div>
-
-                    <h3>Hospital Management System</h3>
-
-                    <p>
-                        A microservice-oriented Hospital Management System
-                        with role-based authentication, FastAPI backend and
-                        containerized deployment architecture.
-                    </p>
-
-                    <div class="project-stack">
-                        <span>FastAPI</span>
-                        <span>Python</span>
-                        <span>PostgreSQL</span>
-                        <span>Docker</span>
-                        <span>Kubernetes</span>
-                    </div>
-
-                    <div class="project-links">
-                        <a href="#">View Project →</a>
-                        <a href="#">GitHub ↗</a>
-                    </div>
-
-                </article>
-
-
-
-                <!-- PROJECT 2 -->
-
-                <article class="project-card">
-
-                    <div class="project-top">
-
-                        <span class="project-number">02</span>
-
-                        <span class="project-icon">🚀</span>
-
-                    </div>
-
-                    <h3>DevSecOps CI/CD Pipeline</h3>
-
-                    <p>
-                        End-to-end CI/CD pipeline integrating code analysis,
-                        security scanning, containerization and automated
-                        Kubernetes deployment.
-                    </p>
-
-                    <div class="project-stack">
-                        <span>Jenkins</span>
-                        <span>SonarQube</span>
-                        <span>Trivy</span>
-                        <span>Docker</span>
-                    </div>
-
-                    <div class="project-links">
-                        <a href="#">View Architecture →</a>
-                        <a href="#">GitHub ↗</a>
-                    </div>
-
-                </article>
-
-
-
-                <!-- PROJECT 3 -->
-
-                <article class="project-card">
-
-                    <div class="project-top">
-
-                        <span class="project-number">03</span>
-
-                        <span class="project-icon">☸</span>
-
-                    </div>
-
-                    <h3>DevOps Engineering Lab</h3>
-
-                    <p>
-                        A collection of hands-on DevOps experiments,
-                        Kubernetes troubleshooting, infrastructure automation
-                        and daily engineering learnings.
-                    </p>
-
-                    <div class="project-stack">
-                        <span>Kubernetes</span>
-                        <span>Linux</span>
-                        <span>Containerd</span>
-                        <span>Networking</span>
-                    </div>
-
-                    <div class="project-links">
-                        <a href="#">Explore Logs →</a>
-                        <a href="#">GitHub ↗</a>
-                    </div>
-
-                </article>
-
-
-
-                <!-- PROJECT 4 -->
-
-                <article class="project-card">
-
-                    <div class="project-top">
-
-                        <span class="project-number">04</span>
-
-                        <span class="project-icon">📈</span>
-
-                    </div>
-
-                    <h3>Kubernetes Monitoring</h3>
-
-                    <p>
-                        Monitoring infrastructure for Kubernetes clusters
-                        using Prometheus, Grafana and Kubernetes exporters.
-                    </p>
-
-                    <div class="project-stack">
-                        <span>Prometheus</span>
-                        <span>Grafana</span>
-                        <span>VictoriaMetrics</span>
-                    </div>
-
-                    <div class="project-links">
-                        <a href="#">View Project →</a>
-                        <a href="#">GitHub ↗</a>
-                    </div>
-
-                </article>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ================= EXPERIENCE ================= -->
-
-    <section id="experience" class="section section-dark">
-
-        <div class="container">
-
-            <div class="section-heading">
-
-                <p class="section-tag">// engineering_journey</p>
-
-                <h2>
-                    Experience &
-                    <span>continuous learning.</span>
-                </h2>
-
-            </div>
-
-
-            <div class="timeline">
-
-
-                <div class="timeline-item">
-
-                    <div class="timeline-date">
-                        Present
-                    </div>
-
-                    <div class="timeline-content">
-
-                        <h3>DevOps Engineer / Kubernetes Administrator</h3>
-
-                        <p class="company">
-                            Enterprise Infrastructure
-                        </p>
-
-                        <p>
-                            Working with Kubernetes clusters, container
-                            runtimes, infrastructure upgrades, CI/CD
-                            automation, monitoring and production
-                            troubleshooting.
-                        </p>
-
-                        <ul>
-                            <li>Kubernetes cluster administration</li>
-                            <li>Container runtime upgrades</li>
-                            <li>Infrastructure automation</li>
-                            <li>Monitoring and observability</li>
-                            <li>Cloud-native troubleshooting</li>
-                        </ul>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="timeline-item">
-
-                    <div class="timeline-date">
-                        Journey
-                    </div>
-
-                    <div class="timeline-content">
-
-                        <h3>Cloud Native & DevOps Engineering</h3>
-
-                        <p>
-                            Continuously building hands-on projects and
-                            exploring modern infrastructure technologies.
-                        </p>
-
-                        <div class="timeline-tags">
-                            <span>Kubernetes</span>
-                            <span>Terraform</span>
-                            <span>CI/CD</span>
-                            <span>Cloud</span>
-                            <span>Automation</span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ================= CURRENTLY LEARNING ================= -->
-
-    <section class="section">
-
-        <div class="container">
-
-            <div class="section-heading">
-
-                <p class="section-tag">// currently_exploring</p>
-
-                <h2>
-                    Always learning.
-                    <span>Always building.</span>
-                </h2>
-
-            </div>
-
-
-            <div class="learning-grid">
-
-                <div class="learning-item">
-                    <span>☸</span>
-                    Kubernetes Gateway API
-                </div>
-
-                <div class="learning-item">
-                    <span>📈</span>
-                    CoreDNS Autoscaling
-                </div>
-
-                <div class="learning-item">
-                    <span>🐳</span>
-                    Container Runtime Internals
-                </div>
-
-                <div class="learning-item">
-                    <span>🤖</span>
-                    AI & DevOps
-                </div>
-
-                <div class="learning-item">
-                    <span>🧠</span>
-                    Data Structures & Algorithms
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ================= CONTACT ================= -->
-
-    <section id="contact" class="contact-section">
-
-        <div class="container contact-container">
-
-            <p class="section-tag">// let's_connect</p>
 
             <h2>
-                Let's build something
-                <span>reliable.</span>
+                Engineering infrastructure
+                that <span>just works.</span>
+            </h2>
+
+
+            <div class="about-content">
+
+                <p>
+
+                    I work across the infrastructure and application
+                    lifecycle — from containerization and CI/CD to
+                    Kubernetes administration, cloud infrastructure
+                    and observability.
+
+                </p>
+
+
+                <p>
+
+                    Beyond day-to-day engineering, I enjoy learning
+                    new technologies, troubleshooting difficult
+                    problems and building projects that help me
+                    understand systems more deeply.
+
+                </p>
+
+
+                <a href="#experience" class="text-link">
+                    More about my experience →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SKILLS
+===================================================== -->
+
+<section id="skills" class="section section-muted">
+
+    <div class="container">
+
+        <div class="section-label">
+            02 — SKILLS
+        </div>
+
+
+        <div class="section-intro">
+
+            <h2>
+                Tools of the trade.
             </h2>
 
             <p>
-                Interested in DevOps, Cloud Infrastructure,
-                Kubernetes or automation? Let's connect.
+                Technologies I use to build, deploy and operate
+                reliable systems.
             </p>
 
-            <div class="contact-buttons">
+        </div>
 
-                <!-- Replace links later -->
 
-                <a href="https://github.com/mareh786/" class="btn btn-primary">
-                    GitHub ↗
-                </a>
 
-                <a href="https://www.linkedin.com/in/mohammed-adil-rehan-b9b585154/" class="btn btn-secondary">
-                    LinkedIn ↗
-                </a>
+        <div class="skills-grid">
 
-                <a href="mailto:mohammedadilrehan@gmail.com" class="btn btn-secondary">
-                    Email Me
-                </a>
+
+            <div class="skill-group">
+
+                <span class="skill-number">01</span>
+
+                <h3>
+                    Containers & Orchestration
+                </h3>
+
+                <div class="skill-list">
+
+                    <span>Kubernetes</span>
+                    <span>Docker</span>
+                    <span>Helm</span>
+                    <span>ArgoCD</span>
+                    <span>Traefik</span>
+                    <span>Gateway API</span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="skill-group">
+
+                <span class="skill-number">02</span>
+
+                <h3>
+                    CI/CD & DevSecOps
+                </h3>
+
+                <div class="skill-list">
+
+                    <span>Jenkins</span>
+                    <span>GitHub Actions</span>
+                    <span>GitLab CI</span>
+                    <span>SonarQube</span>
+                    <span>Trivy</span>
+                    <span>Gitleaks</span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="skill-group">
+
+                <span class="skill-number">03</span>
+
+                <h3>
+                    Cloud & Infrastructure
+                </h3>
+
+                <div class="skill-list">
+
+                    <span>AWS</span>
+                    <span>GCP</span>
+                    <span>Terraform</span>
+                    <span>Ansible</span>
+                    <span>Linux</span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="skill-group">
+
+                <span class="skill-number">04</span>
+
+                <h3>
+                    Observability
+                </h3>
+
+                <div class="skill-list">
+
+                    <span>Prometheus</span>
+                    <span>Grafana</span>
+                    <span>VictoriaMetrics</span>
+                    <span>ELK</span>
+                    <span>kube-state-metrics</span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="skill-group">
+
+                <span class="skill-number">05</span>
+
+                <h3>
+                    Programming
+                </h3>
+
+                <div class="skill-list">
+
+                    <span>Python</span>
+                    <span>Bash</span>
+                    <span>Java</span>
+                    <span>SQL</span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="skill-group">
+
+                <span class="skill-number">06</span>
+
+                <h3>
+                    Engineering Tools
+                </h3>
+
+                <div class="skill-list">
+
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>Maven</span>
+                    <span>Nginx</span>
+
+                </div>
 
             </div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
 
-    <!-- ================= FOOTER ================= -->
+<!-- =====================================================
+     PROJECTS
+===================================================== -->
 
-    <footer>
+<section id="projects" class="section">
 
-        <div class="container footer-container">
+    <div class="container">
+
+        <div class="section-label">
+            03 — PROJECTS
+        </div>
+
+
+        <div class="section-intro">
+
+            <h2>
+                Selected work.
+            </h2>
 
             <p>
-                © <span id="year"></span>
-                Mohammed Adil Rehan
-            </p>
-
-            <p class="footer-terminal">
-                Built with ☕ and curiosity.
+                A few things I've built, automated or explored.
             </p>
 
         </div>
 
-    </footer>
 
 
-    <script src="js/app.js"></script>
+        <div class="projects-grid">
+
+
+            <!-- PROJECT -->
+
+            <article class="project-card project-featured">
+
+                <div class="project-header">
+
+                    <span>01</span>
+
+                    <span class="project-type">
+                        APPLICATION
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    Hospital Management System
+                </h3>
+
+
+                <p>
+
+                    A microservice-oriented hospital management
+                    platform with a FastAPI backend and a
+                    container-ready architecture.
+
+                </p>
+
+
+                <div class="project-tech">
+
+                    <span>FastAPI</span>
+                    <span>Python</span>
+                    <span>PostgreSQL</span>
+                    <span>Docker</span>
+
+                </div>
+
+
+                <div class="project-footer">
+
+                    <a href="#">
+                        GitHub ↗
+                    </a>
+
+                    <a href="#">
+                        Details →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROJECT -->
+
+            <article class="project-card">
+
+                <div class="project-header">
+
+                    <span>02</span>
+
+                    <span class="project-type">
+                        DEVOPS
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    DevSecOps Pipeline
+                </h3>
+
+
+                <p>
+
+                    An automated CI/CD workflow integrating
+                    code analysis, vulnerability scanning,
+                    container builds and deployment.
+
+                </p>
+
+
+                <div class="project-tech">
+
+                    <span>Jenkins</span>
+                    <span>SonarQube</span>
+                    <span>Trivy</span>
+                    <span>Docker</span>
+
+                </div>
+
+
+                <div class="project-footer">
+
+                    <a href="#">
+                        GitHub ↗
+                    </a>
+
+                    <a href="#">
+                        Details →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROJECT -->
+
+            <article class="project-card">
+
+                <div class="project-header">
+
+                    <span>03</span>
+
+                    <span class="project-type">
+                        KUBERNETES
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    Kubernetes Engineering Lab
+                </h3>
+
+
+                <p>
+
+                    Hands-on experiments covering Kubernetes
+                    administration, networking, troubleshooting,
+                    upgrades and container runtime behaviour.
+
+                </p>
+
+
+                <div class="project-tech">
+
+                    <span>Kubernetes</span>
+                    <span>Containerd</span>
+                    <span>Linux</span>
+                    <span>Networking</span>
+
+                </div>
+
+
+                <div class="project-footer">
+
+                    <a href="#">
+                        GitHub ↗
+                    </a>
+
+                    <a href="#">
+                        Details →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROJECT -->
+
+            <article class="project-card">
+
+                <div class="project-header">
+
+                    <span>04</span>
+
+                    <span class="project-type">
+                        OBSERVABILITY
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    Kubernetes Monitoring
+                </h3>
+
+
+                <p>
+
+                    Monitoring and observability setup for
+                    Kubernetes environments using metrics,
+                    dashboards and exporters.
+
+                </p>
+
+
+                <div class="project-tech">
+
+                    <span>Prometheus</span>
+                    <span>Grafana</span>
+                    <span>VictoriaMetrics</span>
+
+                </div>
+
+
+                <div class="project-footer">
+
+                    <a href="#">
+                        GitHub ↗
+                    </a>
+
+                    <a href="#">
+                        Details →
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     EXPERIENCE
+===================================================== -->
+
+<section id="experience" class="section section-muted">
+
+    <div class="container">
+
+        <div class="section-label">
+            04 — EXPERIENCE
+        </div>
+
+
+        <div class="experience-layout">
+
+
+            <div>
+
+                <h2>
+                    Where I've been
+                    <span>building.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="experience-list">
+
+
+                <div class="experience-item">
+
+                    <div class="experience-date">
+                        PRESENT
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            DevOps Engineer /
+                            Kubernetes Administrator
+                        </h3>
+
+
+                        <p class="experience-company">
+                            Wipro
+                        </p>
+
+
+                        <p>
+
+                            Working with Kubernetes infrastructure,
+                            container runtimes, production
+                            troubleshooting, upgrades, automation,
+                            monitoring and cloud-native technologies.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="experience-item">
+
+                    <div class="experience-date">
+                        CONTINUOUS
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            Independent Engineering
+                        </h3>
+
+
+                        <p class="experience-company">
+                            Projects & Learning
+                        </p>
+
+
+                        <p>
+
+                            Building hands-on projects and exploring
+                            Kubernetes, cloud infrastructure,
+                            automation, Python and software engineering.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     LEARNING
+===================================================== -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-label">
+            05 — CURRENTLY EXPLORING
+        </div>
+
+
+        <div class="learning-header">
+
+            <h2>
+                Never done learning.
+            </h2>
+
+        </div>
+
+
+        <div class="learning-list">
+
+            <div>
+                <span>01</span>
+                Kubernetes Gateway API
+            </div>
+
+            <div>
+                <span>02</span>
+                Container Runtime Internals
+            </div>
+
+            <div>
+                <span>03</span>
+                Cloud Native Architecture
+            </div>
+
+            <div>
+                <span>04</span>
+                AI & DevOps
+            </div>
+
+            <div>
+                <span>05</span>
+                Data Structures & Algorithms
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section id="contact" class="contact">
+
+    <div class="container contact-container">
+
+        <p class="eyebrow">
+            HAVE A PROJECT IN MIND?
+        </p>
+
+
+        <h2>
+            Let's build something
+            <span>great.</span>
+        </h2>
+
+
+        <p>
+
+            I'm always interested in discussing DevOps,
+            cloud infrastructure, Kubernetes and interesting
+            engineering problems.
+
+        </p>
+
+
+        <div class="contact-links">
+
+            <a href="#">
+                GitHub ↗
+            </a>
+
+            <a href="#">
+                LinkedIn ↗
+            </a>
+
+            <a href="mailto:your-email@example.com">
+                Email ↗
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="container footer-container">
+
+        <span>
+            © <span id="year"></span>
+            Mohammed Adil Rehan
+        </span>
+
+
+        <span>
+            Built with intention.
+        </span>
+
+    </div>
+
+</footer>
+
+
+
+<script src="js/app.js"></script>
 
 </body>
+
 </html>
