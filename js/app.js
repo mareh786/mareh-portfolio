@@ -1,76 +1,54 @@
-// ===============================
-// CURRENT YEAR
-// ===============================
+// Current year
 
 document.getElementById("year").textContent =
     new Date().getFullYear();
 
 
-// ===============================
-// MOBILE MENU
-// ===============================
+// Mobile navigation
 
 const menuButton = document.getElementById("menu-btn");
+
 const navLinks = document.querySelector(".nav-links");
 
 
-if (menuButton && navLinks) {
-    menuButton.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-    });
+menuButton.addEventListener("click", () => {
 
-    document.querySelectorAll(".nav-links a").forEach(link => {
+    navLinks.classList.toggle("mobile-open");
+
+});
+
+
+// Close mobile menu when clicking a link
+
+document
+    .querySelectorAll(".nav-links a")
+    .forEach(link => {
+
         link.addEventListener("click", () => {
-            navLinks.classList.remove("active");
+
+            navLinks.classList.remove("mobile-open");
+
         });
+
     });
-}
 
 
-// ===============================
-// NAVBAR SCROLL EFFECT
-// ===============================
+// Navbar shadow while scrolling
 
 const navbar = document.querySelector(".navbar");
 
 
-if (navbar) {
-    window.addEventListener("scroll", () => {
-        if (window.scrollY > 50) {
-            navbar.style.boxShadow = "0 10px 30px rgba(0,0,0,0.3)";
-        } else {
-            navbar.style.boxShadow = "none";
-        }
-    });
-}
+window.addEventListener("scroll", () => {
 
+    if (window.scrollY > 30) {
 
-// ===============================
-// FADE-IN ANIMATION
-// ===============================
+        navbar.style.boxShadow =
+            "0 10px 40px rgba(0,0,0,0.25)";
 
-const animatedElements = document.querySelectorAll(
-    ".skill-card, .project-card, .stat-card, .timeline-item, .learning-item"
-);
+    } else {
 
+        navbar.style.boxShadow = "none";
 
-if (animatedElements.length) {
-    const observer = new IntersectionObserver(
-        (entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("show");
-                    observer.unobserve(entry.target);
-                }
-            });
-        },
-        {
-            threshold: 0.15
-        }
-    );
+    }
 
-    animatedElements.forEach((element) => {
-        element.classList.add("hidden");
-        observer.observe(element);
-    });
-}
+});
