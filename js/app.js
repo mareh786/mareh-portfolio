@@ -1,54 +1,79 @@
+```javascript
+// =========================
 // Current year
+// =========================
 
-document.getElementById("year").textContent =
-    new Date().getFullYear();
+const yearElement = document.getElementById("year");
+
+if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+}
 
 
+// =========================
 // Mobile navigation
+// =========================
 
 const menuButton = document.getElementById("menu-btn");
-
 const navLinks = document.querySelector(".nav-links");
 
+if (menuButton && navLinks) {
 
-menuButton.addEventListener("click", () => {
+    menuButton.addEventListener("click", () => {
 
-    navLinks.classList.toggle("mobile-open");
+        const isOpen =
+            navLinks.classList.toggle("mobile-open");
 
-});
-
-
-// Close mobile menu when clicking a link
-
-document
-    .querySelectorAll(".nav-links a")
-    .forEach(link => {
-
-        link.addEventListener("click", () => {
-
-            navLinks.classList.remove("mobile-open");
-
-        });
-
+        menuButton.setAttribute(
+            "aria-expanded",
+            String(isOpen)
+        );
     });
 
 
-// Navbar shadow while scrolling
+    // Close menu after clicking a navigation link
+
+    document
+        .querySelectorAll(".nav-links a")
+        .forEach((link) => {
+
+            link.addEventListener("click", () => {
+
+                navLinks.classList.remove("mobile-open");
+
+                menuButton.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+            });
+
+        });
+}
+
+
+// =========================
+// Navbar shadow
+// =========================
 
 const navbar = document.querySelector(".navbar");
 
+if (navbar) {
 
-window.addEventListener("scroll", () => {
+    window.addEventListener("scroll", () => {
 
-    if (window.scrollY > 30) {
+        if (window.scrollY > 30) {
 
-        navbar.style.boxShadow =
-            "0 10px 40px rgba(0,0,0,0.25)";
+            navbar.style.boxShadow =
+                "0 10px 40px rgba(0, 0, 0, 0.25)";
 
-    } else {
+        } else {
 
-        navbar.style.boxShadow = "none";
+            navbar.style.boxShadow = "none";
 
-    }
+        }
 
-});
+    });
+
+}
+```
