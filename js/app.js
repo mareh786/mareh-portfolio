@@ -19,6 +19,26 @@
     });
   }
 
+  // Reveal content as it enters the viewport.
+  var revealElements = document.querySelectorAll('.reveal');
+  if (reduceMotion || !('IntersectionObserver' in window)) {
+    revealElements.forEach(function (element) {
+      element.classList.add('is-visible');
+    });
+  } else {
+    var revealObserver = new IntersectionObserver(function (entries, observer) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.1 });
+
+    revealElements.forEach(function (element) {
+      revealObserver.observe(element);
+    });
+  }
+
   // ---- Footer year ----
   var yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
