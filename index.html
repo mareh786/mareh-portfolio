@@ -3,22 +3,37 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Name — DevOps &amp; Infrastructure Engineer</title>
-<meta name="description" content="Portfolio of Your Name, DevOps and Infrastructure Engineer specializing in Kubernetes, observability, and automation.">
+<title>Alex Morgan — DevOps &amp; Infrastructure Engineer</title>
+<meta name="description" content="Portfolio of Alex Morgan, DevOps and Infrastructure Engineer specializing in Kubernetes, observability, and automation.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <a class="skip-link" href="#main">Skip to content</a>
 
+<!-- Fixed side rail — desktop only -->
+<aside class="rail" aria-label="Section navigation">
+  <span class="rail-word">Alex&nbsp;Morgan</span>
+  <nav class="rail-nav">
+    <a href="#top" class="rail-dot" data-label="Intro" aria-label="Intro"></a>
+    <a href="#about" class="rail-dot" data-label="About" aria-label="About"></a>
+    <a href="#skills" class="rail-dot" data-label="Stack" aria-label="Stack"></a>
+    <a href="#experience" class="rail-dot" data-label="Experience" aria-label="Experience"></a>
+    <a href="#projects" class="rail-dot" data-label="Projects" aria-label="Projects"></a>
+    <a href="#contact" class="rail-dot" data-label="Contact" aria-label="Contact"></a>
+  </nav>
+  <div class="rail-social">
+    <a href="https://github.com/alexmorgan" aria-label="GitHub">GH</a>
+    <a href="https://linkedin.com/in/alexmorgan" aria-label="LinkedIn">IN</a>
+  </div>
+</aside>
+
 <header class="nav">
   <div class="nav-inner">
-    <a href="#top" class="mark" aria-label="Home">
-      <span class="mark-text">Your Name</span>
-    </a>
+    <a href="#top" class="mark">Alex Morgan</a>
     <nav class="nav-links" id="navLinks">
       <a href="#about">About</a>
       <a href="#skills">Stack</a>
@@ -38,41 +53,70 @@
   <!-- HERO -->
   <section class="hero" id="top">
     <div class="hero-inner">
-      <p class="hero-kicker"><em>DevOps &amp; Infrastructure Engineer</em></p>
-      <h1 class="hero-title">I build the systems that keep everything else running.</h1>
-      <p class="hero-sub">
-        Your Name — a short line on what you do: Kubernetes, observability, and
-        automated infrastructure, replace with your own positioning statement.
-      </p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">View projects</a>
-        <a href="/assets/resume.pdf" class="btn btn-text" download>Download résumé</a>
+      <div class="hero-copy reveal">
+        <p class="hero-kicker"><em>DevOps &amp; Infrastructure Engineer</em></p>
+        <h1 class="hero-title">I build the systems that keep everything else running.</h1>
+        <p class="hero-sub">
+          I design and operate Kubernetes platforms, observability stacks, and
+          automated infrastructure — the parts of the system nobody notices
+          until they break, and that's exactly the point.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View projects</a>
+          <a href="/assets/resume.pdf" class="btn btn-text" download>Download résumé</a>
+        </div>
       </div>
+
+      <aside class="hero-facts reveal" aria-label="Quick facts">
+        <dl>
+          <div>
+            <dt>Location</dt>
+            <dd>Bengaluru, India</dd>
+          </div>
+          <div>
+            <dt>Focus</dt>
+            <dd>Kubernetes, observability, automation</dd>
+          </div>
+          <div>
+            <dt>Availability</dt>
+            <dd>Open to remote roles</dd>
+          </div>
+          <div>
+            <dt>Currently at</dt>
+            <dd>Nimbus Cloud Systems</dd>
+          </div>
+        </dl>
+      </aside>
     </div>
   </section>
 
   <!-- ABOUT -->
   <section class="about" id="about">
     <div class="section-inner">
-      <div class="about-grid">
-        <div class="about-head">
-          <h2>About</h2>
+      <div class="section-grid">
+        <div class="section-label">
+          <span class="index">01</span>
+          <span class="label-text">About</span>
         </div>
-        <div class="about-body">
+        <div class="section-content reveal">
           <p>
-            Replace this with two or three sentences about your background: how you got
-            into infrastructure work, what kind of systems you like operating, and what
-            you focus on today — for example, cluster reliability, observability tooling,
-            or platform automation.
+            I got into infrastructure the way most people do — by being the person
+            who got paged when something fell over. Six years later I'm still the
+            one who gets paged, but now the systems mostly fall over less: multi-tenant
+            Kubernetes clusters, the observability stack that watches them, and the
+            automation that keeps both from needing me at 2am.
           </p>
           <p>
-            Add a second paragraph on your approach — how you think about on-call,
-            incident response, or building tools that other engineers actually want to use.
+            I care most about the boring stuff done well — dashboards people actually
+            read during an incident, alerts that mean something when they fire, and
+            infrastructure changes that are reviewable instead of tribal knowledge.
+            If a runbook is longer than a page, I'd rather fix the system than write
+            a longer runbook.
           </p>
           <ul class="focus-list">
-            <li>Area of focus — e.g. Kubernetes reliability at scale</li>
-            <li>Area of focus — e.g. observability &amp; dashboarding</li>
-            <li>Area of focus — e.g. infrastructure automation</li>
+            <li><span>Kubernetes reliability</span><span class="focus-note">multi-cluster, multi-tenant, at scale</span></li>
+            <li><span>Observability &amp; dashboarding</span><span class="focus-note">metrics that people actually read</span></li>
+            <li><span>Infrastructure automation</span><span class="focus-note">less manual toil, fewer 2am pages</span></li>
           </ul>
         </div>
       </div>
@@ -82,33 +126,39 @@
   <!-- SKILLS -->
   <section class="skills" id="skills">
     <div class="section-inner">
-      <h2>Stack</h2>
-      <p class="section-lede">Grouped by the layer of the system it operates on. Edit freely to match your own toolset.</p>
-
-      <div class="skills-grid">
-        <div class="skill-group">
-          <h3>Cloud &amp; infrastructure</h3>
-          <ul class="tag-list">
-            <li>AWS</li><li>GCP</li><li>Terraform</li><li>Pulumi</li><li>VPC networking</li>
-          </ul>
+      <div class="section-grid">
+        <div class="section-label">
+          <span class="index">02</span>
+          <span class="label-text">Stack</span>
         </div>
-        <div class="skill-group">
-          <h3>Orchestration</h3>
-          <ul class="tag-list">
-            <li>Kubernetes</li><li>Helm</li><li>Kustomize</li><li>ArgoCD</li><li>Docker</li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <h3>Observability</h3>
-          <ul class="tag-list">
-            <li>Grafana</li><li>Prometheus</li><li>VictoriaMetrics</li><li>Loki</li><li>OpenTelemetry</li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <h3>CI/CD &amp; automation</h3>
-          <ul class="tag-list">
-            <li>GitHub Actions</li><li>Jenkins</li><li>Ansible</li><li>Bash</li><li>Python</li>
-          </ul>
+        <div class="section-content reveal">
+          <p class="section-lede">The tools I reach for most, grouped by the layer of the system they operate on.</p>
+          <div class="skills-grid">
+            <div class="skill-group">
+              <h3>Cloud &amp; infrastructure</h3>
+              <ul class="tag-list">
+                <li>AWS</li><li>GCP</li><li>Terraform</li><li>Pulumi</li><li>VPC networking</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h3>Orchestration</h3>
+              <ul class="tag-list">
+                <li>Kubernetes</li><li>Helm</li><li>Kustomize</li><li>ArgoCD</li><li>Docker</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h3>Observability</h3>
+              <ul class="tag-list">
+                <li>Grafana</li><li>Prometheus</li><li>VictoriaMetrics</li><li>Loki</li><li>OpenTelemetry</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h3>CI/CD &amp; automation</h3>
+              <ul class="tag-list">
+                <li>GitHub Actions</li><li>Jenkins</li><li>Ansible</li><li>Bash</li><li>Python</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -117,78 +167,89 @@
   <!-- EXPERIENCE -->
   <section class="experience" id="experience">
     <div class="section-inner">
-      <h2>Experience</h2>
-
-      <ol class="timeline">
-        <li class="timeline-item">
-          <div class="timeline-date">2024 — Present</div>
-          <div class="timeline-body">
-            <h3>Job Title <span class="timeline-org">— Company Name</span></h3>
-            <p>One or two lines on scope and impact — what you owned, what scale you operated at, what improved because you were there.</p>
-          </div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-date">2022 — 2024</div>
-          <div class="timeline-body">
-            <h3>Job Title <span class="timeline-org">— Company Name</span></h3>
-            <p>One or two lines on scope and impact for this role.</p>
-          </div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-date">2020 — 2022</div>
-          <div class="timeline-body">
-            <h3>Job Title <span class="timeline-org">— Company Name</span></h3>
-            <p>One or two lines on scope and impact for this role.</p>
-          </div>
-        </li>
-      </ol>
+      <div class="section-grid">
+        <div class="section-label">
+          <span class="index">03</span>
+          <span class="label-text">Experience</span>
+        </div>
+        <div class="section-content">
+          <ol class="timeline">
+            <li class="timeline-item reveal">
+              <div class="timeline-date">2024 — Present</div>
+              <div class="timeline-body">
+                <h3>Senior DevOps Engineer <span class="timeline-org">— Nimbus Cloud Systems</span></h3>
+                <p>Own the platform team's Kubernetes clusters serving 40+ microservices. Led the migration from Prometheus to VictoriaMetrics, cutting query latency roughly in half and trimming storage costs by a third.</p>
+              </div>
+            </li>
+            <li class="timeline-item reveal">
+              <div class="timeline-date">2022 — 2024</div>
+              <div class="timeline-body">
+                <h3>DevOps Engineer <span class="timeline-org">— Solstice Retail Tech</span></h3>
+                <p>Built and maintained CI/CD pipelines for 12 engineering teams. Introduced canary releases via ArgoCD and brought average deploy time down from 40 minutes to under 6.</p>
+              </div>
+            </li>
+            <li class="timeline-item reveal">
+              <div class="timeline-date">2020 — 2022</div>
+              <div class="timeline-body">
+                <h3>Systems Engineer <span class="timeline-org">— Northbridge Data</span></h3>
+                <p>Migrated on-prem infrastructure to AWS for a 200-person SaaS company. Automated environment provisioning with Terraform and Ansible, cutting setup time from days to hours.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- PROJECTS -->
   <section class="projects" id="projects">
     <div class="section-inner">
-      <h2>Projects</h2>
-      <p class="section-lede">A few things you've built or run. Replace with your own — dashboards, pipelines, IaC modules, internal tools.</p>
+      <div class="section-grid">
+        <div class="section-label">
+          <span class="index">04</span>
+          <span class="label-text">Projects</span>
+        </div>
+        <div class="section-content">
+          <p class="section-lede">A few things I've built or run recently.</p>
 
-      <div class="project-list">
+          <div class="project-list">
+            <article class="project-row reveal">
+              <h3>Cluster Health Dashboard</h3>
+              <p>A Grafana dashboard suite on top of VictoriaMetrics giving on-call a single, multi-cluster view of node health, pod saturation, and SLO burn rate — replaced four separate dashboards nobody trusted.</p>
+              <div class="project-meta">
+                <span class="project-tags">Kubernetes, Grafana, VictoriaMetrics</span>
+                <span class="project-links">
+                  <a href="#" class="project-link">Live</a>
+                  <a href="#" class="project-link">Repo</a>
+                </span>
+              </div>
+            </article>
 
-        <article class="project-row">
-          <h3>Project name</h3>
-          <p>Short description of the project — the problem it solved and the result. Keep it concrete: numbers and outcomes read better than adjectives.</p>
-          <div class="project-meta">
-            <span class="project-tags">Kubernetes, Grafana, Terraform</span>
-            <span class="project-links">
-              <a href="#" class="project-link">Live</a>
-              <a href="#" class="project-link">Repo</a>
-            </span>
+            <article class="project-row reveal">
+              <h3>Zero-Downtime Deploy Pipeline</h3>
+              <p>GitHub Actions + ArgoCD pipeline with automated canary analysis and rollback on SLO breach. Cut failed-deploy incident time from ~45 minutes of manual triage to an automatic rollback in under 3.</p>
+              <div class="project-meta">
+                <span class="project-tags">GitHub Actions, ArgoCD, Kubernetes</span>
+                <span class="project-links">
+                  <a href="#" class="project-link">Live</a>
+                  <a href="#" class="project-link">Repo</a>
+                </span>
+              </div>
+            </article>
+
+            <article class="project-row reveal">
+              <h3>Infra-as-Code Starter Kit</h3>
+              <p>A set of reusable, opinionated Terraform modules for standing up a new AWS environment — VPC, EKS cluster, and baseline IAM — in under 15 minutes instead of a day of copy-pasted configs.</p>
+              <div class="project-meta">
+                <span class="project-tags">Terraform, AWS, Python</span>
+                <span class="project-links">
+                  <a href="#" class="project-link">Live</a>
+                  <a href="#" class="project-link">Repo</a>
+                </span>
+              </div>
+            </article>
           </div>
-        </article>
-
-        <article class="project-row">
-          <h3>Project name</h3>
-          <p>Short description of the project — the problem it solved and the result. Keep it concrete: numbers and outcomes read better than adjectives.</p>
-          <div class="project-meta">
-            <span class="project-tags">Ansible, AWS, CI/CD</span>
-            <span class="project-links">
-              <a href="#" class="project-link">Live</a>
-              <a href="#" class="project-link">Repo</a>
-            </span>
-          </div>
-        </article>
-
-        <article class="project-row">
-          <h3>Project name</h3>
-          <p>Short description of the project — the problem it solved and the result. Keep it concrete: numbers and outcomes read better than adjectives.</p>
-          <div class="project-meta">
-            <span class="project-tags">Docker, Prometheus, Python</span>
-            <span class="project-links">
-              <a href="#" class="project-link">Live</a>
-              <a href="#" class="project-link">Repo</a>
-            </span>
-          </div>
-        </article>
-
+        </div>
       </div>
     </div>
   </section>
@@ -196,12 +257,19 @@
   <!-- CONTACT -->
   <section class="contact" id="contact">
     <div class="section-inner">
-      <h2>Get in touch</h2>
-      <p class="section-lede">Open to new roles and interesting infrastructure problems. Reach out directly.</p>
-      <div class="contact-links">
-        <a href="mailto:your.email@example.com" class="contact-link">your.email@example.com</a>
-        <a href="https://github.com/yourhandle" class="contact-link">GitHub</a>
-        <a href="https://linkedin.com/in/yourhandle" class="contact-link">LinkedIn</a>
+      <div class="section-grid">
+        <div class="section-label">
+          <span class="index">05</span>
+          <span class="label-text">Contact</span>
+        </div>
+        <div class="section-content reveal">
+          <p class="section-lede">Open to new roles and interesting infrastructure problems. Reach out directly.</p>
+          <div class="contact-links">
+            <a href="mailto:alex.morgan@example.com" class="contact-link">alex.morgan@example.com</a>
+            <a href="https://github.com/alexmorgan" class="contact-link">GitHub</a>
+            <a href="https://linkedin.com/in/alexmorgan" class="contact-link">LinkedIn</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -210,7 +278,7 @@
 
 <footer class="site-footer">
   <div class="section-inner footer-inner">
-    <span>© <span id="year"></span> Your Name</span>
+    <span>© <span id="year"></span> Alex Morgan</span>
     <span class="footer-build">Built with HTML, CSS, JS</span>
   </div>
 </footer>
