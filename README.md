@@ -69,7 +69,7 @@ you can see the layout filled in. To make it yours:
 Colors, type, and spacing are controlled by CSS variables at the top of
 `css/style.css` (`:root { ... }`) if you want to adjust the palette or fonts.
 
-## Deployment
+
 
 ### Docker
 
